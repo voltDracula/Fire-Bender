@@ -1,0 +1,369 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/Background-1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+
+}
+
+/** styling Main Body **/
+.mainBody{
+    width: 70%;
+    height: 80vh;
+    margin:auto;
+    border-radius: 50px;
+    box-shadow: 0 0 10px #2F2F2F;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+}
+.left-panel{
+    width: 60%;
+    height: 78vh;
+    background-image: url(../images/Background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+    margin: auto;
+    border-radius: 50px;
+    margin-left: 0.5%;
+    display: flex;
+    flex-direction: column;
+ 
+    
+}
+.right-panel{
+    width: 40%;
+    height: 80vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+
+}
+.button-1{
+    width: 100%;
+    height: 10%;
+    margin-top: 5%;
+}
+.button-1 span{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 7%;
+}
+
+.button-1 .signup{
+    margin-left: 35%;
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    margin-top: 2%;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+    color: white;
+
+}
+.button-1 .joinus{
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    margin-top: 2%;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+}
+
+.section-3{
+    width: 100%;
+    height: 70%;
+
+}
+.section-4{
+    width: 100%;
+    height: 20%;
+    display: flex;    
+}
+.section-4 .user{
+    width: 10%;
+    height:  100%;
+    margin-left: 7%;
+}
+.section-4 .user i{
+    color: white;
+    font-size: 1.5rem;
+    border: 1px solid #23133E;
+    padding: 15px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 50%;
+    background-color: #F52F50;
+}
+.section-4 .details{
+    color: white;
+    margin-top: 5px;
+}
+
+.section-4 .arrows{
+    width: 20%;
+    margin-left: 35%;
+}
+.section-4 .arrows #left,
+.section-4 .arrows #right{
+    font-size: 1rem;
+    color: white;
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 50px;
+    margin-right: 5%;
+    cursor: pointer;
+    transition: .5s;
+    background: transparent;
+}
+.section-4 .arrows #left:hover,
+.section-4 .arrows #right:hover{
+    background-color: #F52F50;
+    border: 1px solid #F52F50;
+    transition: .5s;
+}
+
+/** styling the right panel element **/
+.label{
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.label h1{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 160px;
+    margin-left: 2%;
+    color: #2f2f2f;
+}
+.label #language{
+    height: 40px;
+    margin-right: 10%;
+    margin-top: 10%;
+    border-radius: 50px;
+    text-indent: 15px;
+}
+
+/** styling the form and its elements **/
+form{
+    width: 80%;
+    height: 80%;
+}
+form h1{
+    text-align: center;
+    margin-top: 15%;
+    font-size: 2.5rem;
+    color: #2F2F2F;
+}
+form h6{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.email{
+    position: relative;
+    height: 10%;
+    margin-top: 10%;
+
+}
+.email input{
+    width: 80%;
+    height: 85%;
+    padding: 1px 0;
+    color: #2F2F2F;
+    outline: none;
+    background: transparent;
+    margin-left: 10%;
+    border: 1px solid #2F2F2F;
+    border-radius: 10px;
+    text-indent: 10px;
+}
+.email label{
+    position: absolute;
+    top: 20%;
+    left: 12%;
+    color: #2F2F2F;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.password{
+    position: relative;
+    height: 10%;
+    margin-top: 2%;
+
+}
+.password input{
+    width: 80%;
+    height: 85%;
+    padding: 1px 0;
+    color: #2F2F2F;
+    outline: none;
+    background: transparent;
+    margin-left: 10%;
+    border: 1px solid #2F2F2F;
+    border-radius: 10px;
+    text-indent: 10px;
+}
+.password label{
+    position: absolute;
+    top: 20%;
+    left: 12%;
+    color: #2F2F2F;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .5s;
+}
+/** adding focus effects **/
+.email input:focus ~ label,
+.email input:valid ~ label{
+    top: -7px;
+    left: 15%;
+    color: #F52F50;
+    font-size: .8rem;
+    transition: .5s;
+    background-color: whitesmoke;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.password input:focus ~ label,
+.password input:valid ~ label{
+    top: -7px;
+    left: 15%;
+    color: #F52F50;
+    font-size: .8rem;
+    transition: .5s;
+    background-color: whitesmoke;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/** more focus effects **/
+.email input:focus,
+.password input:focus{
+    border: 1px solid #F52F50;
+    transition: .5s;
+    color: #2F2F2F;
+}
+form label{
+    float: right;
+    margin-right: 10%;
+    color: #F52F50;
+    margin-top: 1%;
+}
+
+/** styling the or div **/
+.Or{
+    height: 5%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.Or .one,
+.Or .two{
+    width: 15%;
+    height: 1px;
+    background-color: #2F2F2F;
+}
+.Or span{
+    margin: 0 15px;
+    color: #2F2F2F;
+}
+
+/** styling google button **/
+.google{
+    width: 80%;
+    height: 9%;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 10%;
+    border: 1px solid #2F2F2F;
+    font-size: 0.8rem;
+    background: transparent;
+}
+#icon-google{
+    margin-left: 10px;
+    color: #DB4437;
+    font-size: 1.3rem;
+}
+
+/** styling the login button **/
+.login{
+    width: 80%;
+    height: 9%;
+    border-radius: 10px;
+    border: 1px solid #F52F50;
+    margin-left: 10%;
+    margin-top: 5%;
+    background-color: #F52F50;
+    color: white;
+    font-size: 0.8rem;
+}
+/** styling the option div **/
+.options{
+    width: 80%;
+    height: 5%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+.options label{
+    color: #2F2F2F;
+    font-size: 0.8rem;
+}
+.options .signup{
+    color: #F52F50;
+    font-size: 0.8rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s;
+}
+.options .signup:hover{
+    text-decoration: underline;
+    transition: .5s;
+}
+
+
+/** styling social media icons **/
+.socials{
+    display: flex;
+    width:80%;
+    height: 10%;
+    justify-content: center;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+.socials i{
+    color: #2F2F2F;
+    font-size: 1.2rem;
+    margin: 2%;
+    transition: .8s;
+}
